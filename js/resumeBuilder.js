@@ -8,7 +8,7 @@ var bio = {
         'gitHub': "http://github.com/ColeTraynor",
         'location': 'Oakville, Ontario'
     },
-    'biopic': 'http://patkaybites.files.wordpress.com/2013/04/happy-smug-sloth.jpg',
+    'biopic': 'https://dl-web.dropbox.com/get/IMAG0686_1.jpg?_subject_uid=356911521&w=AACliVKyeD4nIFZ-k7FLphrNMTGVqM5NdCvw79MxSL-D-A',
     'Wel': 'Welcome to my resume!',
     'skills': ['Knowledge of Python, Java, Javascript', 'Arch linux user']
 
