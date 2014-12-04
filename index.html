@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <!--
@@ -15,7 +16,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 <scripts> for JavaScript files to build interactions.
 -->
 <head>
-  <link href="css/style.css" rel="stylesheet" type="text/css"></link>
+  <link href="css/style.css" rel="stylesheet" type="text/css" id='Css'></link>
 
   <!--
   jQuery is a common JavaScript library for reading and making changes to the
@@ -41,10 +42,39 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   -->
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+  <script src="js/jquery.snow.js"></script>
+
   <meta name="viewport" content="width=device-width">
 </head>
 <body unresolved>
+
   <div id="main">
+   <button id='christmasfy'>Christmasfy</button>
+
+   <script>
+      $(document).ready( function(){
+        
+        var origCss = document.querySelector('#Css');
+        var pic = document.querySelector('.biopic');
+
+        christmasPic = 'https://dl-web.dropbox.com/get/IMAG0686_1_1.jpg?_subject_uid=356911521&w=AABGYPG5cWAlJaF6C6VXJeFe7IcttVOPZwuJ2plymQ759g'
+        christmasCss = 'css/style2.css';
+        christmasBorder = 'http://fla.fg-a.com/print-borders/christmas-lights-3-lg.gif';
+
+        $('#christmasfy').click(function(){
+
+            $.fn.snow();
+
+            // change 
+            origCss.href = christmasCss;       
+            pic.src = christmasPic;
+            document.querySelector('.welcome-message').innerHTML = "Merry Christmas!";
+
+        });
+      });
+   </script>
+
      <!-- You'll be deleting this line in the course -->
 
     <!--

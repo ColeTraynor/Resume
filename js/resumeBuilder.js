@@ -157,3 +157,14 @@ $(document).click(function(loc) {
     logClick(loc.clientX + " " + loc.clientY);
 });
 
+
+// christmasfy
+
+
+
+
+
+
+
+
+
