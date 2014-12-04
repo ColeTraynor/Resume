@@ -52,9 +52,8 @@ h2, h3, h4, h5 {
 }
 
 h3 {
-    padding-left: 0%;
+    padding-left:0%;
 }
-
 
 .date-text {
   font-style: italic;
@@ -75,7 +74,7 @@ h3 {
 
 p {
   font-size: 14px;
-  color: #333333;
+  color: #999999;
   line-height: 21px;
 }
 

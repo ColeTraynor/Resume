@@ -92,6 +92,7 @@ education.display= function(info){
 
     };
 
+    $(".education-entry:last").append("<br></br>");
     $(".education-entry:last").append(HTMLonlineClasses);
 
     for (course in info.online){
@@ -132,9 +133,27 @@ project.display = function(info){
     };
 };
 
-$('#mapDiv').append(googleMap);
 
 bio.display(bio);
 education.display(education);
 work.display(work);
 project.display(project);
+
+$('#mapDiv').append(googleMap);
+
+$('#main').append("<center>" + internationalizeButton + "</center>");
+
+function inName(){
+    var name = bio.Name.split(" ");
+    
+    return name[0] + " " + name[1].toUpperCase();
+}
+
+function logClick(x, y){
+    console.log(x, y);
+}
+
+$(document).click(function(loc) {
+    logClick(loc.clientX + " " + loc.clientY);
+});
+
