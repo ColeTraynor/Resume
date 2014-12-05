@@ -56,6 +56,7 @@ var HTMLonlineURL = "<br><a href='#'>%data%</a>";
 
 var internationalizeButton = "<button id='inter'>Internationalize</button>";
 var googleMap = "<div id='map'></div>";
+var mapBorder = "<img src='' id='border'></img>";
 
 
 /*

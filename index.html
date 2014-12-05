@@ -65,11 +65,13 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
         $('#christmasfy').click(function(){
 
             $.fn.snow();
+            //$('#map').append(mapBorder); //I tried.
 
             // change 
             origCss.href = christmasCss;       
             pic.src = christmasPic;
             document.querySelector('.welcome-message').innerHTML = "Merry Christmas!";
+            //document.querySelector('#border').src = christmasBorder;
 
         });
       });

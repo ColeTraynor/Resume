@@ -133,13 +133,13 @@ project.display = function(info){
     };
 };
 
+$('#mapDiv').append(googleMap);
+
 
 bio.display(bio);
 education.display(education);
 work.display(work);
 project.display(project);
-
-$('#mapDiv').append(googleMap);
 
 $('#main').append("<center>" + internationalizeButton + "</center>");
 
@@ -159,7 +159,6 @@ $(document).click(function(loc) {
 
 
 // christmasfy
-
 
 
 
